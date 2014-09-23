@@ -1,0 +1,17 @@
+table {
+	width: 70%;
+	margin: 0 auto;
+
+}
+
+td, th {
+	border: 1px solid black;
+
+}
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 50px;
+  text-overflow: ellipsis;
+}
+	
