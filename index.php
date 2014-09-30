@@ -1,5 +1,6 @@
 <?php 
 require_once("lib/header.inc.php");
+
  ?>
 
 <?php 

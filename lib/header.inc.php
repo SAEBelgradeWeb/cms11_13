@@ -3,6 +3,12 @@ error_reporting(2);
 require_once("config.php");
 require_once("lib/db_conn.php");
 require_once("lib/functions.php");
+$logovan = check_if_login();
+
+if (!$logovan) {
+
+header("Location: login.php");
+}
  ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +19,8 @@ require_once("lib/functions.php");
 </head>
 <body>
 <header>
+<h5>Welcome <?php echo $_SESSION['user']['username'] ?></h5>
+<h5><a href="logout.php">Logout</a></h5>
 	<nav>
 		<ul>
 			<?php 
